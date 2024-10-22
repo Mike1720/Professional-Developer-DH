@@ -179,3 +179,136 @@ El prototipo es una representación interactiva del diseño final. Puede hacer c
 
 * Miro: Es excelente para la creación de wireframes y colaboración en tiempo real. Facilita la visualización de la estructura y disposición de elementos siendo ideal para la planificación y conceptualización.
 * Figma: Puedes utilizar Figma tanto para el diseño como para prototipos. Es una plataforma integral que permite crear diseños visuales detallados y luego convertirlos en prototipos interactivos. Además, su capacidad de colaboración en tiempo real es muy útil para equipos de diseño y desarrollo.
+
+---
+
+> Modulo 4.- HTML
+
+# INTRODUCCIÓN A HTML
+
+### ¿Qué es HTML?
+
+HTML significa Lenguaje de Marcado de Hipertexto.
+
+* Es le lenguaje de marcado estándar para crear páginas web.
+* HTML describe la estructura de una página web.
+* HTML consiste en una serie de elementos. Los elementos etiquetan partes del contenido, como "esto es un encabezado", "esto es un parrafo", "esto es un enlace", etc.
+
+### Análisis de HTML
+
+Cada **elemento** en el lenguaje HTML produce un *componente visual* en el navegador.
+
+# ETIQUETAS Y ATRIBUTOS
+
+### ¿Qué es una etiqueta HTML?
+
+Una etiqueta HTML se define mediante una **etiqueta de inicio**, algún contenido y una **etiqueta de cierre**.
+
+### Sintaxis de una etiqueta
+
+`<h1>Contenido</h1>`
+
+* Etiqueta de apertura:
+  Indica el comienzo de un elemento. Siempre debe iniciar con el símbolo de menor < y terminar con el simbolo de mayor >. Dentro debe ir el **nombre** de la etiqueta.
+* Etiqueta de cierre:
+  Indica el final de un elemento. Siempre debe iniciar con el símbolo de menor seguido de la barra diagonal </ y terminar con el signo de mayor >. El nombre va dentro.
+
+Algunas etiquetas HTML no tienen contenido (como el elemento `<br>`).
+Estos elementos se llaman elementos vacios. ¡Los elementos vacios no tienen etiqueta de cierre!
+
+### Estructura Básica de un documento HTML
+
+```
+<html>
+	<head>
+		<title>Hello world<title>
+	</head>
+	<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 					Id, hic deleniti voluptatibus consequatur quam earum corporis soluta aut? Tempore quae debitis in voluptates sequi magni, architecto ea nam optio dolor!</p>
+	<body>
+</html>
+```
+
+## Atributos
+
+`<a href="https://some-page">Visitar página random</a>`
+
+* Atributo: href
+  Son configuraciones adicionales de los elementos que ajustan su comportamiento de diversas formas
+* Valores: "https://some-page"
+  Nos permiten definir las configuraciones. Siempre van a estar escritos entre comillas "" y luego de un signo de igual.
+* Contenido: Visitar página random
+  Todo aquello que escribamos entre las etiquetas de apertura y cierre de un elemento, conformarán su contenido
+
+# ETIQUETAS SEMANTICAS
+
+### ¿Qué son las etiquetas semánticas?
+
+Las etiquetas semánticas son elementos HTML que aportan significado y estructura al contenido de una página web.
+
+##### `<header>`
+
+Sirve para generar la cabecera del documento, o incluso también para generar la cabecera de una sección de contenido.
+
+```
+<header>
+	<h1>Título de la página</h1>
+	<p>Subtítulo o descripción de la página</p>
+	<!-- Logotipo -->
+	<!-- Barra de navegación -->
+	<!-- Barra de búsqueda -->
+	<!-- Enlaces a redes sociales -->
+</header>
+```
+
+##### `<nav>`
+
+Sirve para generar una barra de navegación, sea la navegación principal o una barra de navegación alternativa.
+
+```
+<nav>
+	<ul>
+		<li><a href="#">Inicio</a></li>
+		<li><a href="#">Quienes somos</a></li>
+		<li><a href="#">Servicios</a></li>
+		<li><a href="#">Contacto</a></li>
+	</ul>
+</nav>
+```
+
+##### `<section>`
+
+Nos permite definir una sección de contenido. Si quisieramos crear un breve apartado sobre un producto o servicio, esta etiqueta sería una excelente opción.
+
+```
+<section>
+	<h2>Sección importante</h2>
+	<p>Contenido relevante</p>
+</section>
+```
+
+##### `<article>`
+
+Nos permite definir una pieza de contenido independiente. Es decir, contenido que podría funcionar por sí solo sin necesidad de todo lo que lo rodea: un producto, un servicio, una noticia, etc. Generalmente lo vamos a er dentro de `<section>`, pero no es obligatorio.
+
+```
+<article>
+	<h2>Título del Artículo</h2>
+	<p>Contenido del artículo</p>
+</article>
+```
+
+##### `<footer>`
+
+Nos sirve para generar el pie de página principal del documento o el pie de página de una sección de contenido. Tradicionalmente, aqui van cosas como los derechos reservados y algunos enlaces adicionales de la web.
+
+### Ventajas de las Etiquetas Semánticas
+
+Las etiquetas semánticas en HTML ofrecen diversas vantajas que contribuyen a una mejor estructuración y comprensión del contenido de una página web.
+
+* Claridad en el Significado: Las etiquetas como `<header>`, `<article>`, y `<footer>` comunican claramente la función de las secciones, facilitando la interpretación tanto para desarrolladores como para motores de busqueda.
+* Mejora la Accesibilidad: El uso adecuado de etiquetas semánticas mejora la experiencia para usuarios con discapacidades visuales al proporcionar información estructurada y significativa para lectores de pantalla.
+* Fácil Mantenimiento: Hace el que el código sea más legíble y mantenible. Desarrolladores y equipos pueden comprender fácilmente la organización y función de cada parte de la página.
+* Beneficios para SEO: Los motores de búsqueda valoran la estructura semántica, lo que puede mejorar el posicionamiento en los resultados de búsqueda al proporcionar información más precisa sobre el contenido de la página.
+
+![1729368145893](image/NOTES/1729368145893.png)
