@@ -224,7 +224,9 @@ Estos elementos se llaman elementos vacios. ¡Los elementos vacios no tienen eti
 		<title>Hello world<title>
 	</head>
 	<body>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 					Id, hic deleniti voluptatibus consequatur quam earum corporis soluta aut? Tempore quae debitis in voluptates sequi magni, architecto ea nam optio dolor!</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, hic deleniti voluptatibus
+		   consequatur quam earum corporis soluta aut? Tempore quae debitis in voluptates sequi magni, architecto
+		   ea nam optio dolor!</p>
 	<body>
 </html>
 ```
