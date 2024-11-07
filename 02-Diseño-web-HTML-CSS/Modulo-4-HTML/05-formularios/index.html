@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+
+<body>
+
+  <div class="forms">
+    <h1>Formularios</h1>
+    <form method="post">
+      <!-- INPUT TYPE TEXT -->
+      <div class="input-type-text">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name">
+
+        <label for="last_name">Apellido</label>
+        <input type="text" name="last_name" id="last_name">
+      </div>
+
+      <!-- INPUT TYPE RADIO CHECKBOX -->
+      <div class="input-type-radio-checkbox">
+        <h4>Situación laboral</h4>
+        <label for="Empleado">Empleado</label>
+        <input type="radio" name="situacion laboral" id="Empleado" value="Empleado">
+        <label for="Desempleado">Desempleado</label>
+        <input type="radio" name="situacion laboral" id="Desempleado" value="Desempleado">
+        <label for="Busqueda">En busqueda activa</label>
+        <input type="radio" name="situacion laboral" id="Busqueda" value="Busqueda">
+
+        <h4>Tecnologias aprendidas</h4>
+        <label for="HTML">HTML</label>
+        <input type="checkbox" name="tecnologias" id="HTML" value="HTML">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" name="tecnologias" id="CSS" value="CSS">
+        <label for="JS">JAVASCRIPT</label>
+        <input type="checkbox" name="tecnologias" id="JS" value="JS">
+        <label for="REACT">REACT</label>
+        <input type="checkbox" name="tecnologias" id="REACT" value="REACT">
+      </div>
+
+      <!-- El atributo for de la etiqueta label debe coincidir con el atributo id del input o text area -->
+      <!-- TEXT AREA -->
+      <div class="text-area">
+        <label for="comentarios">Comentarios</label>
+        <textarea name="comentarios" id="comentarios" cols="10" rows="10"></textarea>
+      </div>
+
+      <!-- INPUT TYPE SUBMIT -->
+      <div class="submit">
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+
+  <div class="form">
+    <form>
+      <h4>Login</h4>
+      <br>
+      <!-- INPUT TYPE TEXT:EMAIL -->
+      <label for="email">Correo</label>
+      <input type="email" name="email" id="email">
+      <br>
+      <!-- INPUT TYPE TEXT:PASSWORD -->
+      <label for="password">Contraseña</label>
+      <input type="password" name="contraseña" id="password">
+      <br>
+      <input type="submit" value="Enviar">
+      <!-- INPUT TYPE RESET -->
+      <input type="reset" value="Limpiar">
+    </form>
+  </div>
+
+  <div class="other-inputs">
+    <form>
+      <label for="color">Selecciona un color</label>
+      <input type="color" name="color" id="color">
+      <br>
+      <label for="date">Selecciona una fecha</label>
+      <input type="date" name="date" id="date">
+      <br>
+      <label for="time">Selecciona una hora</label>
+      <input type="time" name="time" id="time">
+      <br>
+      <label for="number">Escribe un numero</label>
+      <input type="number" name="number" id="number" min="1" max="10">
+      <br>
+      <label for="range">Selecciona un rango</label>
+      <input type="range" name="range" id="range" min="1" max="10">
+      <br>
+      <label for="file">Selecciona un archivo</label>
+      <input type="file" name="file" id="file">
+      <br>
+      <input type="submit" value="Enviar">
+    </form>
+
+    <div class="input-attributes">
+      <form>
+        <label for="name">Escribe tu nombre</label>
+        <!-- 
+          El atributo name es aquel que va a identificar el input dentro del formulario 
+          El atributo id es aquel que va a identificar el input dentro del documento HTML
+          El atributo value es aquel que va a tener el valor inicial o por defecto del input
+          El atributo readonly es aquel que va a hacer que el input no sea editable
+          El atributo disabled es aquel que va a hacer que el input no sea editable y no se pueda enviar
+          El atributo size es aquel que va a definir el tamaño del input
+          El atributo minlength es aquel que va a definir la longitud minima del input
+          El atributo maxlength es aquel que va a definir la longitud maxima del input
+        -->
+        <input type="text" name="name" id="name" value="Mike" minlength="15" maxlength="20">
+        <br>
+
+
+        <label for="num">Escribe un numero del 1 al 10</label>
+        <!-- 
+          NOTA: ES EL MISMO CASO PARA LOS INPUTS DE TIPO DATE Y RANGE
+          El atributo min es aquel que va a definir el valor minimo del input
+          El atributo max es aquel que va a definir el valor maximo del input
+        -->
+        <input type="number" name="num" id="number" min="1" max="10">
+        <br>
+
+        <label for="date">Escribe una fecha entre 1900 y la fecha actual</label>
+        <input type="date" name="date" id="date" min="1990-01-01" max="2024-11-06">
+        <br>
+
+        <label for="rng">Escoge un rango entre 10 y 20</label>
+        <input type="range" name="rng" id="rng" min="10" max="20">
+        <br>
+
+        <label for="files">Sube un maximo de 5 archivos</label>
+        <!-- 
+          El atributo multiple es aquel que va a permitir subir varios archivos
+        -->
+        <input type="file" name="files" id="files" multiple>
+        <br>
+
+        <!-- 
+          El atributo placeholder es aquel que va a mostrar un texto de ayuda dentro del input
+          El atributo required es aquel que va a hacer que el input sea obligatorio
+          El atributo autofocus es aquel que va a hacer que el input se seleccione automaticamente
+          El atributo autocomplete es aquel que va a hacer que el input no se autocomplete
+        -->
+        <input type="text" name="alone" id="alone" placeholder="Escribe algo" required autofocus>
+        <input type="text" name="alone2" id="alone2" autocomplete="off">
+
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
