@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML avanzado</title>
+</head>
+
+<body>
+
+  <div class="media">
+    <h1>Archivos multimedia</h1>
+
+    <div class="videos">
+      <h4>Videos</h4>
+      <p>Con del debido respeto hacia midu, eres el mejor jsjs</p>
+      <!-- 
+        Atributos:
+        - src: URL del archivo multimedia
+        - controls: Muestra los controles del reproductor
+        - autoplay: Reproduce el video automáticamente
+        - muted: Reproduce el video sin sonido
+      -->
+
+      <!-- <video src="./assets/video/video_ejemplo.mp4" controls></video> -->
+      <video controls>
+        <!-- 
+          Atributos:
+          - src: URL del archivo multimedia
+          - type: Tipo de archivo multimedia
+        -->
+        <source src="./assets/video/video_ejemplo.mp4" type="video/mp4">
+        <!-- Contenido alternativo en caso de que el navegador no pueda reproducir el video -->
+        Tu navegador no soporta el elemento <code>video</code>.
+      </video>
+    </div>
+
+    <div class="audio">
+      <h4>Audio</h4>
+      <!-- 
+        Atributos:
+        - src: URL del archivo multimedia
+        - controls: Muestra los controles del reproductor
+        - autoplay: Reproduce el audio automáticamente
+        - muted: Reproduce el audio sin sonido
+      -->
+      <!-- <audio src="./assets/audio/audio_ejemplo.m4a" controls></audio> -->
+
+      <audio controls>
+        <!-- 
+          Atributos:
+          - src: URL del archivo multimedia
+          - type: Tipo de archivo multimedia
+        -->
+        <source src="./assets/audio/audio_ejemplo.m4a" type="audio/mp3">
+        <!-- Contenido alternativo en caso de que el navegador no pueda reproducir el audio -->
+        Tu navegador no soporta el elemento <code>audio</code>.
+      </audio>
+
+    </div>
+
+
+
+
+  </div>
+
+  <div class="iframe">
+    <h1>Multimedia de 3eros</h1>
+
+    <h4>Videos de Youtube</h4>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mJCIEOGv5Dw?si=2G84DpcfffXbVnPX"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h4>Mapas de Google</h4>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.261133932216!2d-99.07928622478862!3d19.31447168193977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce03d4b49f40db%3A0xf1f408281eef55e7!2sParque%20Las%20Antenas!5e0!3m2!1ses-419!2smx!4v1730948664116!5m2!1ses-419!2smx"
+      width="400" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+
+
+</body>
+
+</html>
