@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro CSS</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <style>
+    p {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="syntax-css">
+    <h1 style="color: red;">Titulo a estilizar</h1>
+    <p>Maneras de estilizar una etiqueta HTML</p>
+    <ul>
+      <li>
+        <h5>Estilos en línea:</h5>
+        NOTA: Los estilos en línea se definen en la etiqueta HTML con el atributo style.
+        <p style="color: blue;">Estilos en línea</p>
+      </li>
+      <li>
+        <h5>Estilos internos:</h5>
+        NOTA: Los estilos internos se definen en la etiqueta &lt;style&gt; dentro del &lt; head &gt; del documento HTML.
+        <p>Estilos internos</p>
+      </li>
+      <li>
+        <h5>Estilos externos</h5>
+        NOTA: Los estilos externos se definen en un archivo CSS separado y se vinculan al documento HTML con la etiqueta
+        &lt;link&gt;.
+        <p>Estilos externos</p>
+      </li>
+    </ul>
+
+    <strong>
+      <i>
+        En cuestion de jerarquia de estilos, los estilos en línea tienen la mayor prioridad, seguidos por los estilos
+        internos y
+        los estilos externos. (aunque esto puede variar dependiendo de la especificidad de los selectores y de la
+        colocación del link de los estilos externos)
+        Estilos en línea &gt; Estilos internos &gt; Estilos externos
+      </i>
+    </strong>
+
+  </div>
+
+
+</body>
+
+</html>
