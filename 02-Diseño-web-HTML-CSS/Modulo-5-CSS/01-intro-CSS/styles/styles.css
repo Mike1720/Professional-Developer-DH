@@ -1,3 +1,38 @@
-p{
-  color: salmon;
+/* APPLYS THE FOLLOWING STYLES TO ALL THE FILE */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.syntax-css {
+  background-color: lightcoral;
+}
+
+.syntax-css p {
+  color: rgb(92, 84, 83);
+}
+
+.css-selectors {
+  background-color: lightblue;
+}
+
+.css-selectors #main-title {
+  color: blue;
+}
+
+.css-selectors .bg-green {
+  background-color: green;
+}
+
+.css-selectors .other-color {
+  color: rgb(173, 204, 37);
+}
+
+.css-selectors p.other-color {
+  text-align: center;
+  font-size: larger;
+}
+
+.css-selectors p,
+.css-selectors h3 {
+  font-style: italic;
 }

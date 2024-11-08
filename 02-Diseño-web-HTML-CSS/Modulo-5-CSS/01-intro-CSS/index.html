@@ -5,12 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intro CSS</title>
+  <!-- CLASE 1: Sintaxis CSS -->
+  <!-- NOTE: Si Link aparece primero, se consideran sus estilos primero y pueden ser sobreescritos por los de la etiqueta style -->
+  <!-- ESTILOS EXTERNOS -->
   <link rel="stylesheet" href="./styles/styles.css">
-  <style>
-    p {
+  <!-- ESTILOS INTERNOS -->
+  <!-- <style>
+    .syntax-css p {
       color: green;
     }
-  </style>
+  </style> -->
 </head>
 
 <body>
@@ -21,35 +25,57 @@
     <ul>
       <li>
         <h5>Estilos en línea:</h5>
-        NOTA: Los estilos en línea se definen en la etiqueta HTML con el atributo style.
+        <p>NOTA: Los estilos en línea se definen en la etiqueta HTML con el atributo style.</p>
         <p style="color: blue;">Estilos en línea</p>
       </li>
       <li>
         <h5>Estilos internos:</h5>
-        NOTA: Los estilos internos se definen en la etiqueta &lt;style&gt; dentro del &lt; head &gt; del documento HTML.
+        <p>NOTA: Los estilos internos se definen en la etiqueta &lt;style&gt; dentro del &lt;head&gt; del documento
+          HTML.</p>
         <p>Estilos internos</p>
       </li>
       <li>
         <h5>Estilos externos</h5>
-        NOTA: Los estilos externos se definen en un archivo CSS separado y se vinculan al documento HTML con la etiqueta
-        &lt;link&gt;.
+        <p>NOTA: Los estilos externos se definen en un archivo CSS separado y se vinculan al documento HTML con la
+          etiqueta &lt;link&gt;.</p>
         <p>Estilos externos</p>
       </li>
     </ul>
 
     <strong>
       <i>
-        En cuestion de jerarquia de estilos, los estilos en línea tienen la mayor prioridad, seguidos por los estilos
-        internos y
-        los estilos externos. (aunque esto puede variar dependiendo de la especificidad de los selectores y de la
-        colocación del link de los estilos externos)
-        Estilos en línea &gt; Estilos internos &gt; Estilos externos
+        En cuestion de jerarquia de estilos, los estilos en línea tienen la mayor prioridad, seguidos por los
+        estilos internos y los estilos externos. (aunque esto puede variar dependiendo de la especificidad de los
+        selectores y de la colocación del link de los estilos externos) Estilos en línea &gt; Estilos internos &gt;
+        Estilos externos
       </i>
     </strong>
 
   </div>
 
+  <div class="css-selectors">
+    <h1 id="main-title">Titulo a estilizar</h1>
+    <p class="other-color bg-green">Parrafo</p>
+    <h3>Titulo más pequeño</h3>
+    <p>Otro parrafo más</p>
+    <h1 class="other-color">Otro Titulo</h1>
+  </div>
 
+  <div class="specifity">
+    <strong>
+      <i>
+        <span>
+          La lectura de los archivos CSS se hace de arriba hacía abajo, por lo que si se definen dos estilos para un
+          mismo elemento, el que se encuentre más abajo en el archivo será el que se aplique.
+        </span>
+        <br>
+        <span>
+          La especificidad de los selectores CSS determina cuál estilo se aplica a un elemento en caso de que haya
+          conflictos. La jerarquía de los selectores es la siguiente: ID &gt; Clase &gt; Etiqueta
+        </span>
+      </i>
+    </strong>
+  </div>
 </body>
 
 </html>
