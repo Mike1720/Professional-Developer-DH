@@ -1,0 +1,30 @@
+.text-color div {
+  background-color: #aa15;
+  width: 200px;
+  height: 200px;
+}
+
+.text-color h2 {
+  color: greenyellow;
+  color: rgb(255, 17, 35);
+  color: hsl(120, 100%, 50%);
+  color: #ff15a3;
+  border: 1px solid black;
+}
+
+
+.text-align div {
+  width: 500px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+.text-align h2 {
+  /* Alineacion con respecto a su contenedor padre (div) */
+  text-align: justify;
+  text-align: left;
+  text-align: start;
+  text-align: end;
+  text-align: right;
+  text-align: center;
+}
