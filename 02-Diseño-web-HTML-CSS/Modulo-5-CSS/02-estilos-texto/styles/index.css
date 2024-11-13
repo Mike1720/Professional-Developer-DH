@@ -226,3 +226,37 @@ body {
 .more-fonts p {
   font-family: 'Roboto';
 }
+
+/* ESTILOS DE LISTAS */
+.lists {
+  margin-top: 20px;
+}
+
+.lists {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: wheat;
+  color: black;
+}
+
+.lists .unordered {
+  /* list-style-type: circle disc square  !unordered list */
+  list-style-type: circle;
+}
+
+.lists .ordered {
+  /* list-style-type: armenian decimal decimal-leading-zero georgian lower-alpha lower-latin lower-greek lower-roman upper-alpha upper-latin upper-roman */
+  list-style-type: decimal;
+}
+
+.lists .image {
+  list-style-position: inside; /* inside: la imagen se coloca dentro del contenedor de la lista. outside: la imagen se coloca fuera del contenedor de la lista.*/
+  list-style-image: url("../assets/images/gatico.png");
+}
+
+.lists .none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
