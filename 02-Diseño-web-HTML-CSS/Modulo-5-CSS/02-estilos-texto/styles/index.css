@@ -116,3 +116,25 @@ body {
 .text-transform .capitalize {
   text-transform: capitalize;
 }
+
+/* ESPACIADO DE TEXTO */
+.text-spacing {
+  margin-top: 20px;
+}
+
+.text-spacing div {
+  width: 500px;
+  height: auto;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: wheat;
+  color: black;
+}
+
+.text-spacing p {
+  text-indent: 50px; /* Indentacion de la primera linea */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  line-height: 1.5; /* Espaciado entre lineas */
+  word-spacing: 7px; /* Espaciado entre palabras */
+  white-space: wrap;  /* Wrap: las palabras se ajustan al contenedor. Nowrap: las palabras no se ajustan al contenedor. */ 
+}
