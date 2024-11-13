@@ -90,3 +90,29 @@ body {
   /* text-decoration: line style color thickness */
   text-decoration: underline solid magenta 5px;
 }
+
+/* TRANSFORMACION DE TEXTO */
+.text-transform {
+  margin-top: 20px;
+}
+
+.text-transform div {
+  width: 200px;
+  height: 70px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: wheat;
+  color: black;
+}
+
+.text-transform .uppercase {
+  text-transform: uppercase;
+}
+
+.text-transform .lowercase {
+  text-transform: lowercase;
+}
+
+.text-transform .capitalize {
+  text-transform: capitalize;
+}
