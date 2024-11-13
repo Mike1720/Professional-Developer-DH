@@ -6,7 +6,7 @@ body {
 
 /* COLORES DE TEXTO */
 .text-color div {
-  background-color: #aa15;
+  background-color: wheat;
   width: 200px;
   height: 200px;
 }
@@ -29,6 +29,8 @@ body {
   width: 500px;
   height: 200px;
   border: 2px solid black;
+  background-color: wheat;
+  color: black;
 }
 
 .text-align h2 {
@@ -44,6 +46,8 @@ body {
 /* DECORACION DE TEXTO */
 .text-decoration {
   justify-self: center;
+  background-color: wheat;
+  color: black;
 }
 
 .text-decoration div {
@@ -54,6 +58,7 @@ body {
   padding: 10px;
   background-color: wheat;
   color: black;
+  justify-self: center;
 }
 
 .text-decoration .Underline {
@@ -94,6 +99,9 @@ body {
 /* TRANSFORMACION DE TEXTO */
 .text-transform {
   margin-top: 20px;
+  background-color: wheat;
+  width: 500px;
+  color: black;
 }
 
 .text-transform div {
@@ -173,6 +181,8 @@ body {
 /* FUENTES */
 .fonts {
   margin-top: 20px;
+  background-color: wheat;
+  color: black;
 }
 
 .fonts h4 {
