@@ -132,11 +132,16 @@ body {
 }
 
 .text-spacing p {
-  text-indent: 50px; /* Indentacion de la primera linea */
-  letter-spacing: 2px; /* Espaciado entre letras */
-  line-height: 1.5; /* Espaciado entre lineas */
-  word-spacing: 7px; /* Espaciado entre palabras */
-  white-space: wrap;  /* Wrap: las palabras se ajustan al contenedor. Nowrap: las palabras no se ajustan al contenedor. */ 
+  text-indent: 50px;
+  /* Indentacion de la primera linea */
+  letter-spacing: 2px;
+  /* Espaciado entre letras */
+  line-height: 1.5;
+  /* Espaciado entre lineas */
+  word-spacing: 7px;
+  /* Espaciado entre palabras */
+  white-space: wrap;
+  /* Wrap: las palabras se ajustan al contenedor. Nowrap: las palabras no se ajustan al contenedor. */
 }
 
 /* SOMBRA DE TEXTO */
@@ -162,5 +167,43 @@ body {
   /* Horizontal, vertical, blur, color */
   /* H: positivo-derecha negativo-izquierda */
   /* V: positivo-abajo negativo-arriba */
-  text-shadow: 2px -2px 2px rgb(83, 76, 76); 
+  text-shadow: 2px -2px 2px rgb(83, 76, 76);
+}
+
+/* FUENTES */
+.fonts {
+  margin-top: 20px;
+}
+
+.fonts h4 {
+  font-size: 50px;
+  /* font-style: italic; */
+  /* font-weight: bold; */
+  font-variant: small-caps;
+  /* Mayusculas pequeñas */
+}
+
+.fonts .serif {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.fonts .sans-serif {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fonts .monospace {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.fonts .cursiva {
+  font-family: "lucida handwriting", cursive;
+}
+
+.fonts .fantasy {
+  font-family: "Comic Sans MS", Impact, fantasy;
+}
+
+.fonts .shorthand {
+  /* font: style varian weight size line-height family */
+  font: italic small-caps bold 30px "Times New Roman", Times, serif;
 }
