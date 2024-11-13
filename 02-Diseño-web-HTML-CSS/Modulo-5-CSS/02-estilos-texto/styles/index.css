@@ -230,9 +230,6 @@ body {
 /* ESTILOS DE LISTAS */
 .lists {
   margin-top: 20px;
-}
-
-.lists {
   border: 2px solid black;
   padding: 10px;
   background-color: wheat;
@@ -250,7 +247,8 @@ body {
 }
 
 .lists .image {
-  list-style-position: inside; /* inside: la imagen se coloca dentro del contenedor de la lista. outside: la imagen se coloca fuera del contenedor de la lista.*/
+  list-style-position: inside;
+  /* inside: la imagen se coloca dentro del contenedor de la lista. outside: la imagen se coloca fuera del contenedor de la lista.*/
   list-style-image: url("../assets/images/gatico.png");
 }
 
@@ -260,3 +258,50 @@ body {
   padding: 0;
 }
 
+.table {
+  margin-top: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: wheat;
+  color: black;
+}
+
+.table table,
+.table th,
+.table td {
+  border: 1px solid black;
+}
+
+.table table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 10px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #b4b0b0;
+}
+
+.table tr:hover {
+  background-color: #807c7c;
+}
+
+.table td:hover{
+  background-color: #443a3a;
+}
+
+.table th,
+.table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #4CAF50;
+  height: 50px;
+}
+
+/* .table td {
+  height: 50px;
+  vertical-align: bottom; /* Alineacion vertical
+} */
