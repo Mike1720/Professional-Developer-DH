@@ -138,3 +138,29 @@ body {
   word-spacing: 7px; /* Espaciado entre palabras */
   white-space: wrap;  /* Wrap: las palabras se ajustan al contenedor. Nowrap: las palabras no se ajustan al contenedor. */ 
 }
+
+/* SOMBRA DE TEXTO */
+.text-shadow {
+  margin-top: 20px;
+}
+
+.text-shadow div {
+  width: 500px;
+  height: auto;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: wheat;
+  color: black;
+}
+
+.text-shadow p {
+  text-indent: 50px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  word-spacing: 7px;
+
+  /* Horizontal, vertical, blur, color */
+  /* H: positivo-derecha negativo-izquierda */
+  /* V: positivo-abajo negativo-arriba */
+  text-shadow: 2px -2px 2px rgb(83, 76, 76); 
+}
