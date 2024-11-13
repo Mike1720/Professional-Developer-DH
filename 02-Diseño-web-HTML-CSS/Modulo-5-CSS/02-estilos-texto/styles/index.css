@@ -207,3 +207,22 @@ body {
   /* font: style varian weight size line-height family */
   font: italic small-caps bold 30px "Times New Roman", Times, serif;
 }
+
+/* FUENTES TERCEROS */
+
+.more-fonts {
+  margin-top: 20px;
+}
+
+.more-fonts div {
+  width: 500px;
+  height: auto;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: wheat;
+  color: black;
+}
+
+.more-fonts p {
+  font-family: 'Roboto';
+}
