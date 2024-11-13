@@ -1,3 +1,10 @@
+body {
+  background-color: #1E201E;
+  color: #fff;
+}
+
+
+/* COLORES DE TEXTO */
 .text-color div {
   background-color: #aa15;
   width: 200px;
@@ -9,9 +16,14 @@
   color: rgb(255, 17, 35);
   color: hsl(120, 100%, 50%);
   color: #ff15a3;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
+/* ALINEACION DE TEXTO */
+
+.text-align {
+  justify-self: center;
+}
 
 .text-align div {
   width: 500px;
@@ -27,4 +39,54 @@
   text-align: end;
   text-align: right;
   text-align: center;
+}
+
+/* DECORACION DE TEXTO */
+.text-decoration {
+  justify-self: center;
+}
+
+.text-decoration div {
+  width: 150px;
+  height: 100px;
+  border: 2px solid black;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: wheat;
+  color: black;
+}
+
+.text-decoration .Underline {
+  text-decoration-line: underline;
+  text-decoration-color: cyan;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+}
+
+.text-decoration .Overline {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+}
+
+.text-decoration .Line-through {
+  text-decoration-line: line-through;
+  text-decoration-color: green;
+  text-decoration-style: dotted;
+}
+
+.text-decoration .None {
+  text-decoration-line: overline;
+  text-decoration-line: none;
+}
+
+.text-decoration .mixed {
+  text-decoration-line: underline overline line-through;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+.text-decoration .shorthand {
+  /* text-decoration: line style color thickness */
+  text-decoration: underline solid magenta 5px;
 }
