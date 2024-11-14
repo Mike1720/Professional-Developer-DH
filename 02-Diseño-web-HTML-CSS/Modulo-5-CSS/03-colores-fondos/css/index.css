@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(53, 52, 52);
+  color: rgb(82, 81, 81);
+}
+
+/* COLORES */
+.colors {
+  background-color: #b8b2b2;
+}
+
+/* COLORES POR NOMBRE */
+.colors h4 {
+  color: firebrick;
+  background-color: beige;
+  height: auto;
+}
+
+/* COLORES RGB red, green, blue, 0-255 */
+/* RGBA alpha 0-1 */
+.colors h4 {
+  color: rgb(177, 24, 24);
+  background-color: rgba(23, 160, 160, 0.5);
+}
+
+/* COLORES HEXADECIMAL */
+.colors h4 {
+  color: #ff0000;
+  background-color: #00ff00ad;
+}
+
+/* COLORES HSL hue, saturation, lightness */
+.colors h4 {
+  color: hsl(313, 64%, 54%);
+  background-color: hsla(189, 100%, 50%, 0.644);
+}
+
+/* BACKGROUND */
+.background {
+  background-color: #b8b2b2;
+}
+
+.background .bg-img {
+  width: 100%;
+  height: 500px;
+  background-image: url("https://los40.com/resizer/v2/XZYFIPNSOBDM3IDYG2MDPMOKL4.jpg?auth=4b6342ce5c26e571a29fe5971e53b607eb63ee2a433e14b6a296d390ae36ae6f&quality=70&width=1200&height=900&smart=true");
+  background-size: contain;
+  /* Cover: La imagen se ajusta al tamaño del contenedor. Contain: La imagen se ajusta al tamaño del contenedor sin deformarla */
+  background-repeat: no-repeat;
+  /* repeat: La imagen se repite en todas las direcciones. repeat-x: La imagen se repite solo en horizontal. repeat-y: La imagen se repite solo en vertical. no-repeat: La imagen no se repite. */
+  background-position: center; /* center, right, left (se puede conbinar con top o bottom ) */
+  /* Si size es cover, la posicion no es afectada ya que cover utiliza todo el espacio disponible */
+  background-attachment: fixed;
+  /* fixed: La imagen se mantiene fija en la ventana del navegador. scroll: La imagen se desplaza con el contenido de la página. */
+
+  /* Shorthand 
+  background: color image position/size repeat attachment origin clip;
+  */
+}
