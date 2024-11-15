@@ -1,0 +1,137 @@
+body {
+  background-color: #272626;
+  color: white
+}
+
+/* ANCHO Y ALTO */
+.width-height {
+  background-color: rgb(77, 72, 72);
+  margin-top: 20px;
+}
+
+.width-height .container1 {
+  background-color: red;
+  /* Ancho definido del contenedor */
+  /* width: 200px; */
+  /* Alto definido del contenedor */
+  /* height: 100px; */
+  /* Ancho máximo que el contenedor puede tener */
+  max-width: 500px;
+  /* Alto máximo que el contenedor puede tener */
+  max-height: 500px;
+  /* Ancho mínimo que el contenedor debe ocupar */
+  min-width: 150px;
+  /* Alto mínimo que el contenedor debe ocupar */
+  min-height: 150px;
+  /* NOTE:
+    - Si el contenido del contenedor es mayor al ancho definido, el contenedor se expandirá.
+    - Si el contenido del contenedor es menor al ancho definido, el contenedor se contraerá.
+    Entonces, en este caso, el contenedor se expandirá hasta un máximo de 500px y se contraerá hasta un mínimo de 150px de ancho, y
+    se expandirá hasta un máximo de 500px y se contraerá hasta un mínimo de 150px de alto. Lo que significa que el contenedor tiene
+    un ancho 150px>=x<=500px y un alto 150px>=x<=500px.
+  */
+}
+
+.width-height .container2 {
+  background-color: blue;
+  width: 100px;
+  height: 200px;
+}
+
+.width-height .container3 {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+}
+
+/* BORDERS */
+.border {
+  background-color: rgb(77, 72, 72);
+  margin-top: 20px;
+}
+
+.border .container1 {
+  width: 200px;
+  height: 50px;
+  /* Tipo de borde */
+  /* border-style: dashed, dotted, double, groove, hidden, inset, none, outset, ridge, solid*/
+  border-style: solid;
+}
+
+.border div {
+  border-width: 5px;
+  border-color: tomato;
+  border-radius: 10px;
+}
+
+.border p {
+  text-align: center;
+}
+
+.border .solid {
+  width: 200px;
+  height: 50px;
+  border-style: solid;
+}
+
+.border .dotted {
+  width: 200px;
+  height: 50px;
+  border-style: dotted;
+}
+
+.border .dashed {
+  width: 200px;
+  height: 50px;
+  border-style: dashed;
+}
+
+.border .double {
+  width: 200px;
+  height: 50px;
+  border-style: double;
+}
+
+.border .groove {
+  width: 200px;
+  height: 50px;
+  border-style: groove;
+}
+
+.border .ridge {
+  width: 200px;
+  height: 50px;
+  border-style: ridge;
+}
+
+.border .inset {
+  width: 200px;
+  height: 50px;
+  border-style: inset;
+}
+
+.border .outset {
+  width: 200px;
+  height: 50px;
+  border-style: outset;
+  /* border: width style color */
+  border: 7px outset green;
+}
+
+.border .none {
+  width: 200px;
+  height: 50px;
+  border-style: none;
+}
+
+.border .hidden {
+  width: 200px;
+  height: 50px;
+  border-style: hidden;
+}
+
+.border .mixed {
+  width: 200px;
+  height: 50px;
+  border-style: dashed solid dotted double;
+}
