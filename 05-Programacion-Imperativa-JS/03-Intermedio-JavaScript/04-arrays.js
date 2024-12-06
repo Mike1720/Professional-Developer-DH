@@ -21,6 +21,7 @@ for (let i = 0; i < edades.length; i++) {
   console.log(edades[i]);
 }
 
+// --------------------------------------------
 // Algoritmos clasicos con arrays
 
 let numeros = [10, 20, 30, 40, 50];
@@ -74,3 +75,110 @@ for (let i = 0; i < nums.length; i++) {
 }
 console.log(maxNum); // Output: 52
 console.log(minNum); // Output: 7
+
+// --------------------------------------------
+// Métodos de arrays
+let colores = ['rojo', 'verde', 'azul'];
+
+
+// .push(items)
+/* 
+  Agrega uno o más elementos al final de un array y devuelve la nueva longitud del array.
+  items: Elementos que se agregarán al final del array.
+*/
+colores.push("amarillo"); // retorna 4
+console.log(colores); // Output: ['rojo', 'verde', 'azul', 'amarillo']
+colores.push("naranja", "violeta"); // retorna 6
+console.log(colores); // Output: ['rojo', 'verde', 'azul', 'amarillo', 'naranja', 'violeta']
+
+
+// .pop()
+/* 
+  Elimina el último elemento de un array y lo devuelve.
+  Si el array está vacío, .pop() devuelve undefined.
+*/
+let ultimoColorEliminado = colores.pop();
+console.log(ultimoColorEliminado); // Output: violeta
+console.log(colores); // Output: ['rojo', 'verde', 'azul', 'amarillo', 'naranja']
+
+
+// .shift()
+/* 
+  Elimina el primer elemento de un array y lo devuelve.
+  Si el array está vacío, .shift() devuelve undefined.
+*/
+let Nombres = ['Juan', 'Pedro', 'María', 'Ana', 'Luis'];
+let primerNombreEliminado = Nombres.shift();
+console.log(primerNombreEliminado); // Output: Juan
+console.log(Nombres); // Output: ['Pedro', 'María', 'Ana', 'Luis']
+
+
+// .unshift(items)
+/* 
+  Agrega uno o más elementos al inicio de un array y devuelve la nueva longitud del array.
+  items: Elementos que se agregarán al inicio del array.
+*/
+let marcas = ['Toyota', 'Nissan', 'Chevrolet'];
+marcas.unshift('Ford'); // retorna 4
+console.log(marcas); // Output: ['Ford', 'Toyota', 'Nissan', 'Chevrolet']
+marcas.unshift('Honda', 'Mazda'); // retorna 6
+console.log(marcas); // Output: ['Honda', 'Mazda', 'Ford', 'Toyota', 'Nissan', 'Chevrolet']
+
+
+// .join(separator)
+/* 
+  Une todos los elementos de un array en una cadena de texto.
+  Si no se especifica un separador, se usará una coma.
+*/
+let dias = ["Lunes", "Martes", "Miércoles"];
+let diasUnidos = dias.join(); // retorna "Lunes,Martes,Miércoles"
+console.log(diasUnidos); // Output: Lunes,Martes,Miércoles
+let diasUnidosConGuion = dias.join('-'); // retorna "Lunes-Martes-Miércoles"
+console.log(diasUnidosConGuion); // Output: Lunes-Martes-Miércoles
+let diasUnidosConEspacio = dias.join(' '); // retorna "Lunes Martes Miércoles"
+console.log(diasUnidosConEspacio); // Output: Lunes Martes Miércoles
+
+
+// .indexOf(searchElement, fromIndex)
+/* 
+  Retorna el indice de la primer ocurrencia de un elemento en un array.
+  Si el elemento no se encuentra en el array, devuelve -1.
+  searchElement: Elemento a buscar en el array.
+  fromIndex: Índice a partir del cual se comienza a buscar el elemento.
+*/
+//               0         1       2        3
+let frutas = ['manzana', 'pera', 'uva', 'naranja'];
+let searchedFruit1 = frutas.indexOf("pera"); // retorna 1
+let searchedFruit2 = frutas.indexOf("uva", 2); // retorna 2
+let notFound1 = frutas.indexOf("sandía"); // retorna -1
+let notFound2 = frutas.indexOf("naran", 3); // retorna -1
+
+
+// .lastIndexOf(searchElement, fromIndex)
+/* 
+  Retorna el indice de la última ocurrencia de un elemento en un array.
+  Si el elemento no se encuentra en el array, devuelve -1.
+  searchElement: Elemento a buscar en el array.
+  fromIndex: Índice a partir del cual se comienza a buscar el elemento empezando desde el final del array.
+*/
+
+//                 0            1                  2                 3            4            5
+let clubs = ['Barcelona', 'Real Madrid', 'Atlético de Madrid', 'Real Madrid', 'Sevilla', 'Real Madrid'];
+let searchedClub1 = clubs.lastIndexOf("Real Madrid", 2); // retorna 1
+let searchedClub2 = clubs.lastIndexOf("Real Madrid"); // retorna 5
+let clubNotFound1 = clubs.lastIndexOf("Valencia"); // retorna -1
+
+
+// .includes(searchElement, fromIndex)
+/* 
+  Determina si un array incluye un determinado elemento, devuelve true o false.
+  searchElement: Elemento a buscar en el array.
+  fromIndex: Índice a partir del cual se comienza a buscar el elemento.
+*/
+
+//                0          1      2        3         4        5        6
+let frutas2 = ['manzana', 'pera', 'uva', 'naranja', 'sandía', 'kiwi', 'mango'];
+let hasApple = frutas2.includes("manzana", 0); // retorna true
+let hasOrange = frutas2.includes("naranja", 4); // retorna false
+let hasWatermelon = frutas2.includes("sandía"); // retorna true
+let hasBanana = frutas2.includes("banana"); // retorna false
